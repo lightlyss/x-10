@@ -2,7 +2,8 @@
 
 body{
     margin:0;
-    background:black url(./img/common/bodyBG.jpg);
+    background:rgb(64,64,64);
+    /* background:black center no-repeat fixed url(../img/bodyBG.jpg); */
     font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
 }
 
@@ -62,7 +63,7 @@ button{
 hr{
     border:0;
     height:13px;
-    background:url(./img/common/hr.png) no-repeat center top;
+    background:url(../img/hr.png) no-repeat center top;
 }
 
 /*Common Settings*/
@@ -73,7 +74,7 @@ hr{
     z-index:1000;
     width:320px;
     height:100%;
-    background:url(./img/common/nav.png) no-repeat;
+    background:url(../img/nav.png) no-repeat;
     background-size:320px auto;
     top:80px;
     right:-320px;
@@ -96,7 +97,7 @@ hr{
 #tmenuButton{
     width:79px;
     height:79px;
-    background:url(./img/common/div.png) no-repeat 0 0;
+    background:url(../img/div.png) no-repeat 0 0;
     background-size:79px 79px;
     color:white;
     position:fixed;
@@ -111,7 +112,7 @@ hr{
 #tmenuCloseButton{
     width:79px;
     height:79px;
-    background:url(./img/common/divclose.png) no-repeat 0 0;
+    background:url(../img/divclose.png) no-repeat 0 0;
     background-size:79px 79px;
     color:white;
     position:fixed;
@@ -152,7 +153,7 @@ hr{
         list-style:none;
         width:1080px;
         height:66px;
-        background:url(./img/common/fmenu.png) no-repeat center top;
+        background:url(../img/fmenu.png) no-repeat center top;
         padding:0;
     }
     #fmenu li{
@@ -249,32 +250,32 @@ hr{
     }
 
     #fmenu li:nth-child(1) a{
-        background:url(./img/common/fmenu-m_0.png) no-repeat center center;
+        background:url(../img/fmenu-m_0.png) no-repeat center center;
         background-size:200px 30px;
     }
 
     #fmenu li:nth-child(2) a{
-        background:url(./img/common/fmenu-m_1.png) no-repeat center center;
+        background:url(../img/fmenu-m_1.png) no-repeat center center;
         background-size:200px 30px;
     }
 
     #fmenu li:nth-child(3) a{
-        background:url(./img/common/fmenu-m_2.png) no-repeat center center;
+        background:url(../img/fmenu-m_2.png) no-repeat center center;
         background-size:200px 30px;
     }
 
     #fmenu li:nth-child(4) a{
-        background:url(./img/common/fmenu-m_3.png) no-repeat center center;
+        background:url(../img/fmenu-m_3.png) no-repeat center center;
         background-size:200px 30px;
     }
 
     #fmenu li:nth-child(5) a{
-        background:url(./img/common/fmenu-m_4.png) no-repeat center center;
+        background:url(../img/fmenu-m_4.png) no-repeat center center;
         background-size:200px 30px;
     }
 
     #fmenu li:nth-child(6) a{
-        background:url(./img/common/fmenu-m_5.png) no-repeat center center;
+        background:url(../img/fmenu-m_5.png) no-repeat center center;
         background-size:200px 30px;
     }
 }
@@ -296,7 +297,7 @@ hr{
     margin:20px auto 0 auto;
     width:120px;
     height:40px;
-    background:url(./img/common/mihoyo.png) no-repeat;
+    background:url(../img/mihoyo.png) no-repeat;
     background-size:120px 40px;
     text-indent:-9999px;
     overflow:hidden;
@@ -314,7 +315,7 @@ hr{
 
 #footer ul li{
     padding:0 10px;
-    background:url(./img/common/arrow.png) no-repeat left center;
+    background:url(../img/arrow.png) no-repeat left center;
     background-size:6px 11px;
     font-size:14px;
 }
@@ -361,7 +362,7 @@ hr{
 
 @media screen and (min-width:501px){
     #commonBG{
-        background-image:url(./img/common/bg1.jpg), url(./img/common/bg2.jpg);
+        background-image:url(../img/bg1.jpg), url(../img/bg2.jpg);
         background-position:center 0, center bottom;
         background-repeat:no-repeat, no-repeat;
         padding-bottom:2em;
@@ -369,7 +370,7 @@ hr{
 }
 @media screen and (max-width:500px){
     #commonBG{
-        background-image:url(./img/common/bg1-m.jpg), url(./img/common/bg2-m.jpg);
+        background-image:url(../img/bg1-m.jpg), url(../img/bg2-m.jpg);
         background-position:center 0px, center bottom;
         background-repeat:no-repeat, no-repeat;
         padding-bottom:2em;

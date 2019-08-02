@@ -8,7 +8,7 @@
   <script src="js/UA.js"></script>
   <link rel="stylesheet" href="css/reset.css">
 </head>
-<body style="background:rgb(64,64,64);">
+<body>
   <link rel="stylesheet" href="css/manga.css">
   <section>
     <div id="viewer"></div>
@@ -17,7 +17,7 @@
     <script>
       $(document).ready(() => {
         $('#viewer').mangaviewer({
-          page: 138, // # of pages
+          page: 138,
           path: './img',
           ext: 'jpg',
           page_ejection: 'reliableMarginRight'
