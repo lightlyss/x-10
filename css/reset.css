@@ -1,0 +1,377 @@
+@charset "utf-8";
+
+body{
+    margin:0;
+    background:black url(./img/common/bodyBG.jpg);
+    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+}
+
+@media screen and (max-width:500px){
+    body{
+        overflow-y:auto;
+        overflow-x:hidden;
+    }
+}
+
+canvas, header, section, footer, aside, nav, article, figure, video, audio{
+    display:block;
+    position:relative;
+}
+
+div{
+    position:relative; /*IE, Firefox opacity BugFix*/
+}
+
+a{
+    display:inline-block;
+    color:rgb(173, 232, 255);
+}
+
+a img{
+    border:0;
+    font-size:0;
+}
+
+figure{
+    margin:0;
+}
+
+img{
+    display:inline-block;
+}
+
+span{
+    display:inline-block;
+}
+
+table{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+iframe{
+    border:none;
+}
+
+button{
+    outline:none;
+    padding:0;
+    border:0;
+}
+
+hr{
+    border:0;
+    height:13px;
+    background:url(./img/common/hr.png) no-repeat center top;
+}
+
+/*Common Settings*/
+
+#tmenu{
+    display:block;
+    position:fixed;
+    z-index:1000;
+    width:320px;
+    height:100%;
+    background:url(./img/common/nav.png) no-repeat;
+    background-size:320px auto;
+    top:80px;
+    right:-320px;
+    color:white;
+    box-sizing:border-box;
+}
+
+#tmenu a{
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
+    display:block;
+    width:100%;
+    height:60px;
+    box-sizing:border-box;
+    text-indent:-9999px;
+    overflow:hidden;
+}
+
+#tmenuButton{
+    width:79px;
+    height:79px;
+    background:url(./img/common/div.png) no-repeat 0 0;
+    background-size:79px 79px;
+    color:white;
+    position:fixed;
+    top:0;
+    right:0;
+    cursor:pointer;
+    text-indent:-9999px;
+    overflow:hidden;
+    box-sizing:border-box;
+    z-index:1001;
+}
+#tmenuCloseButton{
+    width:79px;
+    height:79px;
+    background:url(./img/common/divclose.png) no-repeat 0 0;
+    background-size:79px 79px;
+    color:white;
+    position:fixed;
+    top:0;
+    left:0;
+    cursor:pointer;
+    text-indent:-9999px;
+    overflow:hidden;
+    box-sizing:border-box;
+    z-index:1001;
+}
+
+
+
+
+#shield{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:999;
+    top:0;
+    left:0;
+    opacity:0.33;
+    background:black;
+    display:none;
+}
+
+
+
+
+@media screen and (min-width:501px){
+    #fmenu{
+        margin-top:3em;
+        clear:both;
+    }
+    #fmenu ul{
+        margin:0 auto;
+        list-style:none;
+        width:1080px;
+        height:66px;
+        background:url(./img/common/fmenu.png) no-repeat center top;
+        padding:0;
+    }
+    #fmenu li{
+        display:block;
+        float:left;
+        margin:0;
+        height:66px;
+    }
+    #fmenu li a{
+        display:block;
+        height:66px;
+        border:0px solid red;
+        box-sizing:border-box;
+        text-indent:-9999px;
+        overflow:hidden;
+    }
+    #fmenu li:nth-child(1) a{
+        width:145px;
+        margin-left:42px;
+    }
+    #fmenu li:nth-child(2) a{
+        width:122px;
+    }
+    #fmenu li:nth-child(3) a{
+        width:145px;
+        margin-right:180px;
+    }
+    #fmenu li:nth-child(4) a{
+        width:145px;
+    }
+    #fmenu li:nth-child(5) a{
+        width:122px;
+    }
+    #fmenu li:nth-child(6) a{
+        width:140px;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    #fmenu{
+        width:500px;
+        display:block;
+        position:relative;
+        margin:0 auto 0 auto;
+        background:rgb(16, 85, 132);
+        color:white;
+        border-bottom:1px solid rgb(23,73,107);
+        padding:10px 10px;
+        text-align:center;
+        box-sizing:border-box;
+        clear:both;
+    }
+
+    #fmenu ul{
+        font-size:11px;
+        display:table;
+        width:480px;
+        list-style:none;
+        margin:0 auto;
+        padding:0px;
+        border-right:1px solid rgb(23,73,107);
+        border-left:1px solid rgb(16,85,132);
+        box-sizing:border-box;
+    }
+
+    #fmenu ul:first-child{
+        border-top:1px solid rgb(23,73,107);
+    }
+
+    #fmenu li{
+        display:block;
+        float:left;
+        width:50%;
+        border-top:1px solid rgb(16,85,132);
+        border-right:1px solid rgb(16,85,132);
+        border-left:1px solid rgb(23,73,107);
+        border-bottom:1px solid rgb(23,73,107);
+        box-sizing:border-box;
+        text-indent:-9999px;
+        overflow:hidden;
+        background: -webkit-linear-gradient(#377eb5, #2e6ea4); /* For Safari 5.1 to 6.0 */
+        background: -moz-linear-gradient(#377eb5, #2e6ea4); /* For Fi refox 3.6 to 15 */
+        background: linear-gradient( #377eb5, #2e6ea4); /* Standard syntax */
+    }
+
+    #fmenu li a{
+        cursor:pointer;
+        display:block;
+        width:100%;
+        height:100%;
+        padding:20px;
+        box-sizing:border-box;
+    }
+
+    #fmenu li:nth-child(1) a{
+        background:url(./img/common/fmenu-m_0.png) no-repeat center center;
+        background-size:200px 30px;
+    }
+
+    #fmenu li:nth-child(2) a{
+        background:url(./img/common/fmenu-m_1.png) no-repeat center center;
+        background-size:200px 30px;
+    }
+
+    #fmenu li:nth-child(3) a{
+        background:url(./img/common/fmenu-m_2.png) no-repeat center center;
+        background-size:200px 30px;
+    }
+
+    #fmenu li:nth-child(4) a{
+        background:url(./img/common/fmenu-m_3.png) no-repeat center center;
+        background-size:200px 30px;
+    }
+
+    #fmenu li:nth-child(5) a{
+        background:url(./img/common/fmenu-m_4.png) no-repeat center center;
+        background-size:200px 30px;
+    }
+
+    #fmenu li:nth-child(6) a{
+        background:url(./img/common/fmenu-m_5.png) no-repeat center center;
+        background-size:200px 30px;
+    }
+}
+
+
+#footer{
+    clear:both;
+    position:relative;
+    display:block;
+    margin:0 auto;
+    width:100%;
+    padding:15px 20px 40px 20px;
+    box-sizing:border-box;
+    color:white;
+}
+
+#footer h2{
+    display:block;
+    margin:20px auto 0 auto;
+    width:120px;
+    height:40px;
+    background:url(./img/common/mihoyo.png) no-repeat;
+    background-size:120px 40px;
+    text-indent:-9999px;
+    overflow:hidden;
+}
+
+#footer ul{
+    display:table;
+    list-style:none;
+    margin:0 auto 10px auto;
+    padding:0;
+    background:none;
+    width:auto;
+    text-align:center;
+}
+
+#footer ul li{
+    padding:0 10px;
+    background:url(./img/common/arrow.png) no-repeat left center;
+    background-size:6px 11px;
+    font-size:14px;
+}
+
+#footer ul li a{
+    cursor:pointer;
+    text-decoration:underline;
+    color:white;
+}
+
+#footer h6{
+    font-size:9px;
+    text-align:center;
+    font-weight:normal;
+    margin:10px 0;
+}
+@media screen and (min-width:501px){
+    #footer{
+        max-width:1440px;
+    }
+    #footer ul li{
+        display:table-cell;
+    }
+    #yaezakura{
+        display:none;
+    }
+}
+
+@media screen and (max-width:500px){
+    #footer h2{
+        margin-bottom:1em;
+    }
+
+    #footer ul li{
+        display:inline-block;
+        margin-bottom:1em;
+    }
+
+    #yaezakura{
+        display:block;
+    }
+}
+
+
+@media screen and (min-width:501px){
+    #commonBG{
+        background-image:url(./img/common/bg1.jpg), url(./img/common/bg2.jpg);
+        background-position:center 0, center bottom;
+        background-repeat:no-repeat, no-repeat;
+        padding-bottom:2em;
+    }
+}
+@media screen and (max-width:500px){
+    #commonBG{
+        background-image:url(./img/common/bg1-m.jpg), url(./img/common/bg2-m.jpg);
+        background-position:center 0px, center bottom;
+        background-repeat:no-repeat, no-repeat;
+        padding-bottom:2em;
+    }
+}

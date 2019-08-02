@@ -1,0 +1,63 @@
+/*  こっから下漫画用 */
+section{
+    padding:0;
+}
+section img{
+    width:auto;
+    height:auto;
+    max-width:inherit;
+}
+
+html,
+body,
+section,
+#viewer,
+#viewer img{
+    height:100%;
+}
+
+#viewer .sheet{
+    height:calc(98% - 100px);
+    margin:20px 0 10px 0;
+    width:100%;
+    overflow:hidden;
+    max-height:1440px;
+}
+
+#viewer img{
+    cursor:pointer;
+    display:block;
+    margin:0 auto;
+    box-shadow:0px 1px 4px black;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    max-height:1440px;
+}
+
+#viewer #page-link{
+    clear:both;
+    text-align:center;
+}
+#viewer #page-link .btn.active{
+    border: inset 2px #086A87;
+    background-color:#2E9AFE;
+}
+
+@media screen and (max-width:500px){
+    #viewer img{
+        max-width:480px;
+        width:90%;
+        height:auto;
+    }
+    #viewer .sheet{
+        height:auto;
+    }
+}
+
+button{
+    padding:0.25em 0.5em;
+    border:3px solid rgb(64,64,64);
+    margin:0.25em 0;
+}
